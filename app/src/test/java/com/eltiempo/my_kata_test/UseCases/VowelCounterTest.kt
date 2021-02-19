@@ -1,13 +1,12 @@
 package com.eltiempo.my_kata_test.UseCases
 
-import junit.framework.TestCase
-import org.junit.Assert.assertEquals
+import org.junit.Assert.*
 import org.junit.Test
 
-class VowelCounterTest{
+class VowelCounterTest {
 
     @Test
-    fun `validate when input is empty`(){
+    fun `validate when input is empty`() {
 
         //given
         val word = ""
@@ -16,7 +15,23 @@ class VowelCounterTest{
         val vC = VowelCounter()
         val numberOfVowel = vC.count(word)
         //then
-        assertEquals(numberOfVowel,0)
+        assertEquals(numberOfVowel, 0)
+    }
+
+    @Test
+    fun `throw an error when string is greater than 10 characters`() {
+
+        //given
+        val word = "this string has a lot of characters"
+
+        try {
+            //when
+            val numberOfVowel = VowelCounter().count(word)
+            fail("expected exception was not occurred")
+            //then
+        } catch (e: IndexOutOfBoundsException) {
+            //if execution reaches here, it indicates this exception was occured. so we need not handle it.
+        }
     }
 
 }
