@@ -9,11 +9,13 @@ class VowelCounterTest : TestCase(){
     fun `validate when input is empty`(){
 
         //given
-
+        val word = ""
         //when
 
+        val vC = VowelCounter()
+        val numberOfVowel = vC.count(word)
         //then
-
+        assertEquals(numberOfVowel,0)
     }
 
 }
