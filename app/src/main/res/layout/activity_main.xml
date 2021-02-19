@@ -10,9 +10,9 @@
         android:id="@+id/answerTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="#"
         android:layout_marginTop="60dp"
-        android:textSize="40sp"
+        android:textSize="60sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,7 +20,7 @@
         android:id="@+id/vowelEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Escribe tu palabra"
+        android:hint="Escribe tu palabra"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/answerTextView" />
