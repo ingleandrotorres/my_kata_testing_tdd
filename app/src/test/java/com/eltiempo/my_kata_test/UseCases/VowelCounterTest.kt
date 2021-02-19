@@ -1,7 +1,7 @@
 package com.eltiempo.my_kata_test.UseCases
 
-import junit.framework.Assert.assertEquals
 import junit.framework.TestCase
+import org.junit.Assert.assertEquals
 import org.junit.Test
 
 class VowelCounterTest{
