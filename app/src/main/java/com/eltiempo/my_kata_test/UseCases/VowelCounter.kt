@@ -18,7 +18,7 @@ class VowelCounter {
 
             for (character in word.toLowerCase()){
 
-                if (vowel == character.toString()) {
+                if (vowel.equals(character)) {
                     counter++
                 }
 
