@@ -12,9 +12,10 @@ class VowelCounter {
 
         if (word.isEmpty())return 0
 
-        if (word.length > MAX_NUM_CHARACTERS_ALLOWED) {
+        if (word.length > MAX_NUM_CHARACTERS_ALLOWED)
+            @Suppress("UNREACHABLE_CODE")
             return throw IndexOutOfBoundsException()
-        }
+
 
         word.toLowerCase(Locale.ROOT).forEach {
             if (listOfVowels.contains(it.toString()))counter++
